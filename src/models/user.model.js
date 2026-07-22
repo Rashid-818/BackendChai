@@ -25,19 +25,19 @@ const userSchema = new Schema(
             required: true,
             trim: true
         },
-        avatar: {
-            type: String, // cloudinary URL
-            required: true
-        },
-        coverImage: {
-            type: String, // cloudinary URL
-        },
-        watchHistory: [
-            {
-                type: Schema.Type.ObjectId,
-                ref: 'Video'
-            }
-        ],
+        // avatar: {
+        //     type: String, // cloudinary URL
+        //     required: true
+        // },
+        // coverImage: {
+        //     type: String, // cloudinary URL
+        // },
+        // watchHistory: [
+        //     {
+        //         type: Schema.Type.ObjectId,
+        //         ref: 'Video'
+        //     }
+        // ],
         password: {
             type: String,
             required: [true, "Password is required"],
